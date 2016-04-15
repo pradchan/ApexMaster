@@ -1,0 +1,3 @@
+edis DevCS repo = https://developer.em2.oraclecloud.com/developer44315-gse00000639/s/developer44315-gse00000639_apex-demo/scm/apex-demo.git
+pwd = metabolicDark3+
+
