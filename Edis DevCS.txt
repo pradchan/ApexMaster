@@ -1,3 +1,10 @@
-edis DevCS repo = https://developer.em2.oraclecloud.com/developer44315-gse00000639/s/developer44315-gse00000639_apex-demo/scm/apex-demo.git
-pwd = metabolicDark3+
+Edi's DevCS repo
+=============== = 
 
+(old pwd = metabolicDark3+)
+
+https://developer.em2.oraclecloud.com/developer44315-gse00000639/#/projects/developer44315-gse00000639_apex-demo
+
+username = cloud.admin
+
+password = rockyDockage%8 (week of 18th April)
