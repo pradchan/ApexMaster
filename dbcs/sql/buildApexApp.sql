@@ -27,7 +27,7 @@ prompt APPLICATION 102 - Climbing logbook v1.2
 -- Application Export:
 --   Application:     102
 --   Name:            Climbing logbook v1.2
---   Date and Time:   12:12 Friday April 22, 2016
+--   Date and Time:   16:52 Thursday May 19, 2016
 --   Exported By:     JULES
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -111,7 +111,7 @@ wwv_flow_api.create_flow(
 ,p_browser_frame=>'D'
 ,p_rejoin_existing_sessions=>'N'
 ,p_last_updated_by=>'JULES'
-,p_last_upd_yyyymmddhh24miss=>'20160422121150'
+,p_last_upd_yyyymmddhh24miss=>'20160426125302'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -4263,7 +4263,7 @@ wwv_flow_api.create_theme(
 ,p_default_popup_transition=>'NONE'
 ,p_default_navbar_list_template=>wwv_flow_api.id(1925048445146791)
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_theme_file_prefix(42),'#IMAGE_PREFIX#themes/theme_42/1.0/')
-,p_files_version=>68
+,p_files_version=>69
 ,p_icon_library=>'FONTAWESOME'
 ,p_javascript_file_urls=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
 '#IMAGE_PREFIX#libraries/apex/#MIN_DIRECTORY#widget.regionDisplaySelector#MIN#.js?v=#APEX_VERSION#',
@@ -4326,7 +4326,7 @@ wwv_flow_api.create_theme_style(
  p_id=>wwv_flow_api.id(7651432292805040)
 ,p_theme_id=>42
 ,p_name=>'Vita - JL'
-,p_is_current=>false
+,p_is_current=>true
 ,p_theme_roller_input_file_urls=>'#THEME_IMAGES#less/theme/Vita-Slate.less'
 ,p_theme_roller_config=>'{"customCSS":"","vars":{"@g_Accent-BG":"#ffa27c","@g_Accent-OG":"#8d88a8","@g_Body-Title-BG":"#dee1e4","@l_Link-Base":"#337ac0","@g_Body-BG":"#f5f5f5","@utr_Palette1-lighter":"#8c7cff","@utr_Palette1-light":"#d1cbf9","@utr_Palette1":"#aca7cd","@utr_P'
 ||'alette1-darker":"#737089","@utr_Palette2-light":"#d1cbf9","@utr_Palette3-normal":"#aca7cd","@utr_Palette3-dark":"#8d88a8","@utr_Palette2-darker":"#737089","@utr_Palette3-lighter":"#8c7cff","@utr_Palette3-light":"#d1cbf9","@utr_Palette3":"#aca7cd","@u'
@@ -4338,7 +4338,7 @@ wwv_flow_api.create_theme_style(
  p_id=>wwv_flow_api.id(11561342818964109)
 ,p_theme_id=>42
 ,p_name=>'Vita - JL2'
-,p_is_current=>true
+,p_is_current=>false
 ,p_theme_roller_input_file_urls=>'#THEME_IMAGES#less/theme/Vita-Slate.less'
 ,p_theme_roller_config=>'{"customCSS":"","vars":{"@g_Accent-BG":"#827cff","@g_Accent-OG":"#9fbf9b","@g_Body-Title-BG":"#dee1e4","@l_Link-Base":"#337ac0","@g_Body-BG":"#f5f5f5","@utr_Palette1-lighter":"#8cff7c","@utr_Palette1-light":"#ecffe6","@utr_Palette1":"#c2e9bd","@utr_P'
 ||'alette1-darker":"#829c7f","@utr_Palette2-light":"#ecffe6","@utr_Palette3-normal":"#c2e9bd","@utr_Palette3-dark":"#9fbf9b","@utr_Palette2-darker":"#829c7f","@utr_Palette3-lighter":"#8cff7c","@utr_Palette3-light":"#ecffe6","@utr_Palette3":"#c2e9bd","@u'
@@ -12455,7 +12455,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'JULES'
-,p_last_upd_yyyymmddhh24miss=>'20151023154554'
+,p_last_upd_yyyymmddhh24miss=>'20160426125302'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1961198919146852)
@@ -12601,7 +12601,8 @@ wwv_flow_api.create_page_item(
 ,p_cSize=>60
 ,p_cMaxlength=>30
 ,p_tag_attributes=>'onchange="htmldb_item_change(this)"'
-,p_field_template=>wwv_flow_api.id(1929340732146792)
+,p_field_template=>wwv_flow_api.id(1929520509146793)
+,p_item_template_options=>'#DEFAULT#'
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'N'
 ,p_attribute_04=>'TEXT'
