@@ -27,7 +27,7 @@ prompt APPLICATION 102 - Climbing logbook v1.4
 -- Application Export:
 --   Application:     102
 --   Name:            Climbing logbook v1.4
---   Date and Time:   11:37 Friday May 27, 2016
+--   Date and Time:   12:27 Thursday May 26, 2016
 --   Exported By:     JULES
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -42,11 +42,10 @@ prompt APPLICATION 102 - Climbing logbook v1.4
 --     Validations:              7
 --     Processes:               18
 --     Regions:                 13
---     Buttons:                 23
+--     Buttons:                 22
 --     Dynamic Actions:          2
 --   Shared Components:
 --     Logic:
---       Build Options:          1
 --     Navigation:
 --       Lists:                  2
 --       Breadcrumbs:            1
@@ -112,7 +111,7 @@ wwv_flow_api.create_flow(
 ,p_browser_frame=>'D'
 ,p_rejoin_existing_sessions=>'N'
 ,p_last_updated_by=>'JULES'
-,p_last_upd_yyyymmddhh24miss=>'20160527111612'
+,p_last_upd_yyyymmddhh24miss=>'20160526115137'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -11785,12 +11784,7 @@ end;
 /
 prompt --application/shared_components/logic/build_options
 begin
-wwv_flow_api.create_build_option(
- p_id=>wwv_flow_api.id(17032343269581679)
-,p_build_option_name=>'WIP v2.0'
-,p_build_option_status=>'EXCLUDE'
-,p_build_option_comment=>'New functionality intended for v2.0'
-);
+null;
 end;
 /
 prompt --application/shared_components/globalization/language
@@ -12461,7 +12455,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'JULES'
-,p_last_upd_yyyymmddhh24miss=>'20160527111612'
+,p_last_upd_yyyymmddhh24miss=>'20160426125302'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1961198919146852)
@@ -12516,24 +12510,8 @@ wwv_flow_api.create_page_button(
 ,p_database_action=>'DELETE'
 );
 wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(10971838971451738)
-,p_button_sequence=>40
-,p_button_plug_id=>wwv_flow_api.id(1961198919146852)
-,p_button_name=>'SendMessage'
-,p_button_action=>'SUBMIT'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(1929810201146793)
-,p_button_is_hot=>'Y'
-,p_button_image_alt=>'Send Message'
-,p_button_position=>'REGION_TEMPLATE_CLOSE'
-,p_grid_new_grid=>false
-,p_grid_new_row=>'N'
-,p_grid_new_column=>'N'
-,p_required_patch=>wwv_flow_api.id(17032343269581679)
-);
-wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(1969918038146858)
-,p_button_sequence=>70
+,p_button_sequence=>60
 ,p_button_plug_id=>wwv_flow_api.id(1961198919146852)
 ,p_button_name=>'GET_NEXT_ID'
 ,p_button_action=>'REDIRECT_URL'
@@ -12548,7 +12526,7 @@ wwv_flow_api.create_page_button(
 );
 wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(1970070894146858)
-,p_button_sequence=>60
+,p_button_sequence=>50
 ,p_button_plug_id=>wwv_flow_api.id(1961198919146852)
 ,p_button_name=>'GET_PREVIOUS_ID'
 ,p_button_action=>'REDIRECT_URL'
@@ -12563,7 +12541,7 @@ wwv_flow_api.create_page_button(
 );
 wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(1961778745146852)
-,p_button_sequence=>50
+,p_button_sequence=>40
 ,p_button_plug_id=>wwv_flow_api.id(1961198919146852)
 ,p_button_name=>'SAVE'
 ,p_button_action=>'SUBMIT'
