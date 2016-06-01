@@ -27,7 +27,7 @@ prompt APPLICATION 102 - Climbing logbook v1.2
 -- Application Export:
 --   Application:     102
 --   Name:            Climbing logbook v1.2
---   Date and Time:   11:50 Wednesday June 1, 2016
+--   Date and Time:   12:11 Wednesday June 1, 2016
 --   Exported By:     JULES
 --   Flashback:       0
 --   Export Type:     Application Export
