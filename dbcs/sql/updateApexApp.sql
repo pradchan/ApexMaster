@@ -22,12 +22,12 @@ end;
 /
 prompt --application/set_environment
  
-prompt APPLICATION 102 - Climbing logbook v1.6
+prompt APPLICATION 102 - Climbing logbook v1.xx
 --
 -- Application Export:
 --   Application:     102
---   Name:            Climbing logbook v1.6
---   Date and Time:   15:42 Tuesday May 31, 2016
+--   Name:            Climbing logbook v1.xx
+--   Date and Time:   13:11 Wednesday June 1, 2016
 --   Exported By:     JULES
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -88,7 +88,7 @@ wwv_flow_api.create_flow(
  p_id=>wwv_flow.g_flow_id
 ,p_display_id=>nvl(wwv_flow_application_install.get_application_id,102)
 ,p_owner=>nvl(wwv_flow_application_install.get_schema,'JULES')
-,p_name=>nvl(wwv_flow_application_install.get_application_name,'Climbing logbook v1.6')
+,p_name=>nvl(wwv_flow_application_install.get_application_name,'Climbing logbook v1.xx')
 ,p_alias=>nvl(wwv_flow_application_install.get_application_alias,'F_102')
 ,p_page_view_logging=>'YES'
 ,p_checksum_salt=>'8F2D6077CDD4C6B3E4D77537CED46C870F2702EE8BB4F9F479DFC5951217F2F3'
@@ -102,7 +102,7 @@ wwv_flow_api.create_flow(
 ,p_authentication=>'PLUGIN'
 ,p_authentication_id=>wwv_flow_api.id(1940669185146803)
 ,p_application_tab_set=>0
-,p_logo_image=>'TEXT:<i>My Climbing Logbook v1.2</i>'
+,p_logo_image=>'TEXT:<i>My Climbing Logbook v1.xx</i>'
 ,p_proxy_server=> nvl(wwv_flow_application_install.get_proxy,'')
 ,p_flow_version=>'release 1.0'
 ,p_flow_status=>'AVAILABLE_W_EDIT_LINK'
@@ -112,7 +112,7 @@ wwv_flow_api.create_flow(
 ,p_browser_frame=>'D'
 ,p_rejoin_existing_sessions=>'N'
 ,p_last_updated_by=>'JULES'
-,p_last_upd_yyyymmddhh24miss=>'20160531154205'
+,p_last_upd_yyyymmddhh24miss=>'20160601131107'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
