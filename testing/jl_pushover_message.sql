@@ -17,7 +17,7 @@ set define off;
         l_user  varchar2(100);
        begin
         --
-        -- these not used currently v2
+        -- these not used currently v2.1
         --
         l_token := 'abMWr23QPZiXTWPvxDbGCzQcdSFp4Q';
         l_user := 'u9Tm4UyBgai3PCwyrPwgFWuz12TXYU';
