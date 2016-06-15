@@ -88,6 +88,24 @@ end;
 /
 ALTER TRIGGER  jules."bi_CLIMBSTEST" ENABLE
 /
+create or replace PROCEDURE SET_APEX_APP_LOAD_PARAMS AS 
+-- 
+-- Used as part of the DevCS demo, to allow apps to be loaded into
+-- target workspace and schema 'JULES' from any source workspace / schema
+--
+BEGIN
+declare
+    l_workspace_id number;
+begin
+    select workspace_id into l_workspace_id
+      from apex_workspaces
+      where workspace = 'JULES';
+    --
+    apex_application_install.set_workspace_id( l_workspace_id );
+    apex_application_install.generate_offset;
+    apex_application_install.set_schema( 'JULES' );
+end;
+END SET_APEX_APP_LOAD_PARAMS;
 
 set verify on feedback on define on
 prompt  ...done
