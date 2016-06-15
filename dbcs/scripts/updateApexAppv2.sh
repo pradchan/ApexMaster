@@ -7,7 +7,7 @@ dbcs_sys_password=$3
 echo "copying SetParams and Apex export file to target:"
 
 scp -o StrictHostKeyChecking=no -i dbcs/labkey dbcs/sql/UpdateApp.sql oracle@$dbcs_ip:.
-scp -o StrictHostKeyChecking=no -i dbcs/labkey dbcs/sql/updateApexApp.sql oracle@$dbcs_ip:.
+scp -o StrictHostKeyChecking=no -i dbcs/labkey dbcs/sql/NewApexApp.sql oracle@$dbcs_ip:.
 
 echo "..done."
 
