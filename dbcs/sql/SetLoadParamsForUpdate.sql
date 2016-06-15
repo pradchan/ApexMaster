@@ -6,13 +6,7 @@
 --  DDL for Procedure SET_APEX_APP_LOAD_PARAMS
 --------------------------------------------------------
 set define off;
-=======
---------------------------------------------------------
---  DDL for Procedure SET_APEX_APP_LOAD_PARAMS
---------------------------------------------------------
-set define off;
->>>>>>> 87fd42c713c425cfaf4d8008f0ecc566fded887a
-
+--
   CREATE OR REPLACE PROCEDURE "JULES"."SET_APEX_APP_LOAD_PARAMS" AS 
 -- 
 -- Used as part of the DevCS demo, to allow apps to be loaded into
