@@ -13,7 +13,7 @@ echo "..done."
 
 echo "Setting Import Params:"
 
-ssh -o StrictHostKeyChecking=no -i dbcs/labkey oracle@$dbcs_ip "sqlplus $dbcs_sys/$dbcs_sys_password@PDB1 AS SYSDBA @updateApexApp.sql"
+ssh -o StrictHostKeyChecking=no -i dbcs/labkey oracle@$dbcs_ip "sqlplus $dbcs_sys/$dbcs_sys_password@PDB1 AS SYSDBA @SetLoadParamsForUpdate.sql"
 
 echo "..done."
 
