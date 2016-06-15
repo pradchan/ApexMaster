@@ -1,10 +1,17 @@
 --------------------------------------------------------
 --  File created - Wednesday-June-15-2016   
 --------------------------------------------------------
+<<<<<<< HEAD
 --------------------------------------------------------
 --  DDL for Procedure SET_APEX_APP_LOAD_PARAMS
 --------------------------------------------------------
 set define off;
+=======
+--------------------------------------------------------
+--  DDL for Procedure SET_APEX_APP_LOAD_PARAMS
+--------------------------------------------------------
+set define off;
+>>>>>>> 87fd42c713c425cfaf4d8008f0ecc566fded887a
 
   CREATE OR REPLACE PROCEDURE "JULES"."SET_APEX_APP_LOAD_PARAMS" AS 
 -- 
