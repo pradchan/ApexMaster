@@ -1,5 +1,5 @@
 --
--- Set import workspace = target one and and schema = JULES
+-- Set import workspace = the target one and and schema = JULES
 --
 declare
     l_workspace_id number;
@@ -16,5 +16,5 @@ end;
 -- Import any exported app
 --
 /
-@updateApexApp.sql
+@NewApexApp.sql
 
