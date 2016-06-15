@@ -11,14 +11,8 @@ scp -o StrictHostKeyChecking=no -i dbcs/labkey dbcs/sql/updateApexApp.sql oracle
 
 echo "..done."
 
-echo "Setting Import Params:"
+echo "Setting Import Params and Importing App:"
 
-ssh -o StrictHostKeyChecking=no -i dbcs/labkey oracle@$dbcs_ip "sqlplus $dbcs_sys/$dbcs_sys_password@PDB1 AS SYSDBA @SetLoadParamsForUpdate.sql"
-
-echo "..done."
-
-echo "Importing the Apex export file to target database:"
-
-ssh -o StrictHostKeyChecking=no -i dbcs/labkey oracle@$dbcs_ip "sqlplus $dbcs_sys/$dbcs_sys_password@PDB1 AS SYSDBA @updateApexApp.sql"
+ssh -o StrictHostKeyChecking=no -i dbcs/labkey oracle@$dbcs_ip "sqlplus $dbcs_sys/$dbcs_sys_password@PDB1 AS SYSDBA @SetLoadParamsForUpdate.sql @updateApexApp.sql"
 
 echo "..done."
