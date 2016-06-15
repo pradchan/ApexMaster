@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/bin/bash
 
 dbcs_ip=$1
