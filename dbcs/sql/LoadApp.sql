@@ -1,5 +1,5 @@
 --
--- Set import over-ride params to workspace and schema = JULES
+-- Set import workspace = target one and and schema = JULES
 --
 declare
     l_workspace_id number;
@@ -13,7 +13,7 @@ begin
     apex_application_install.set_schema( 'JULES' );
 end;
 --
--- Import the exported app
+-- Import any exported app
 --
 /
 @updateApexApp.sql
