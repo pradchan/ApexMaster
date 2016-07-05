@@ -27,7 +27,7 @@ prompt APPLICATION 102 - Climbing logbook - DevCS Demo
 -- Application Export:
 --   Application:     102
 --   Name:            Climbing logbook - DevCS Demo
---   Date and Time:   11:56 Wednesday June 29, 2016
+--   Date and Time:   12:35 Tuesday July 5, 2016
 --   Exported By:     JULES
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -112,7 +112,7 @@ wwv_flow_api.create_flow(
 ,p_browser_frame=>'D'
 ,p_rejoin_existing_sessions=>'N'
 ,p_last_updated_by=>'JULES'
-,p_last_upd_yyyymmddhh24miss=>'20160629115443'
+,p_last_upd_yyyymmddhh24miss=>'20160705123423'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>3
 ,p_ui_type_name => null
@@ -4480,7 +4480,7 @@ wwv_flow_api.create_theme(
 ,p_default_popup_transition=>'NONE'
 ,p_default_navbar_list_template=>wwv_flow_api.id(1925048445146791)
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_theme_file_prefix(42),'#IMAGE_PREFIX#themes/theme_42/1.0/')
-,p_files_version=>79
+,p_files_version=>80
 ,p_icon_library=>'FONTAWESOME'
 ,p_javascript_file_urls=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
 '#IMAGE_PREFIX#libraries/apex/#MIN_DIRECTORY#widget.regionDisplaySelector#MIN#.js?v=#APEX_VERSION#',
@@ -4510,7 +4510,7 @@ wwv_flow_api.create_theme_style(
  p_id=>wwv_flow_api.id(1931202745146795)
 ,p_theme_id=>42
 ,p_name=>'Vita'
-,p_is_current=>true
+,p_is_current=>false
 ,p_theme_roller_input_file_urls=>'#THEME_IMAGES#less/theme/Vita.less'
 ,p_theme_roller_output_file_url=>'#THEME_IMAGES#css/Vita#MIN#.css?v=#APEX_VERSION#'
 ,p_theme_roller_read_only=>true
@@ -4543,7 +4543,7 @@ wwv_flow_api.create_theme_style(
  p_id=>wwv_flow_api.id(7651432292805040)
 ,p_theme_id=>42
 ,p_name=>'Vita - JL'
-,p_is_current=>false
+,p_is_current=>true
 ,p_theme_roller_input_file_urls=>'#THEME_IMAGES#less/theme/Vita-Slate.less'
 ,p_theme_roller_config=>'{"customCSS":"","vars":{"@g_Accent-BG":"#9bff7c","@g_Accent-OG":"#8172d1","@g_Body-Title-BG":"#dee1e4","@l_Link-Base":"#337ac0","@g_Body-BG":"#f5f5f5","@utr_Palette1-lighter":"#ff7cb0","@utr_Palette1-light":"#c0a9ff","@utr_Palette1":"#9e8bff","@utr_P'
 ||'alette1-darker":"#6a5dab","@utr_Palette2-light":"#c0a9ff","@utr_Palette3-normal":"#9e8bff","@utr_Palette3-dark":"#8172d1","@utr_Palette2-darker":"#6a5dab","@utr_Palette3-lighter":"#ff7cb0","@utr_Palette3-light":"#c0a9ff","@utr_Palette3":"#9e8bff","@u'
