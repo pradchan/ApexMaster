@@ -15,8 +15,7 @@
       "sid": "ORCL",
       "pdb": "PDB1",
       "failoverDatabase": "no",
-      "backupDestination": "BOTH",
-      "cloudStorageContainer": "storage_domain\/storage_container",
+      "backupDestination": "NO",
       "cloudStorageUser": "storage_user",
       "cloudStoragePwd": "storage_password"
     }
