@@ -1,0 +1,7 @@
+GSE jcsdemo0006 in US DC
+
+DBCS instance MyDBCS is at 160.34.12.191
+
+DevCS Repository is ApexDemo2 (NOT Apexdemo)
+
+pwd = fOss1lRock@us
