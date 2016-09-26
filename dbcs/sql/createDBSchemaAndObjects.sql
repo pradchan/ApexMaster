@@ -4,6 +4,9 @@ whenever sqlerror exit sql.sqlcode rollback
 create user jules identified by oracle;
 grant connect,dba to jules;
 /
+prompt  Running SQL Script
+prompt  --//--
+
 --create Schema Objects
 CREATE TABLE  jules."CLIMBSTEST" 
    (	"ID" NUMBER, 
@@ -109,6 +112,7 @@ END SET_APEX_APP_LOAD_PARAMS;
 
 set verify on feedback on define on
 prompt  ...done
+prompt  --//--
 
 exit
 

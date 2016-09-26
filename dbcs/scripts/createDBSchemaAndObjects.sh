@@ -4,6 +4,8 @@ dbcs_ip=$1
 dbcs_sys=$2
 dbcs_sys_password=$3
 
-echo "running the SQL that creates the DB Schema and its Objects on the Server:"
+echo "Creating Schema and objects on the target Database.."
+echo "--//--"
 ssh -o StrictHostKeyChecking=no -i dbcs/labkey oracle@$dbcs_ip "sqlplus $dbcs_sys/$dbcs_sys_password@PDB1 AS SYSDBA @createDBSchemaAndObjects.sql"
 echo "..done."
+echo "--//--"
