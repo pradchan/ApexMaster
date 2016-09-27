@@ -1,7 +1,7 @@
 set define off verify off feedback off
 whenever sqlerror exit sql.sqlcode rollback
 --------------------------------------------------------------------------------
---
+-- xx
 -- ORACLE Application Express (APEX) export file
 --
 -- You should run the script connected to SQL*Plus as the Oracle user
