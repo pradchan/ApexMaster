@@ -1,4 +1,4 @@
-#!/bin/bash
+	#!/bin/bash
 
 dbcs_ip=$1
 dbcs_sys=$2
